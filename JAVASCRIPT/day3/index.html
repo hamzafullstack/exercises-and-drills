@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3: Strict Mode Demo</title>
+</head>
+<body>
+  <h1>JavaScript Strict Mode Demo</h1>
+  <p>Open the console to see the results of normal mode vs strict mode.</p>
+
+  <script>
+    /*
+      ================================
+      LESSON 3 EXERCISE / CHALLENGE
+      ================================
+
+      Task:
+      1. Demonstrate a "silent bug" in normal mode:
+         - Assign a value to an undeclared variable.
+         - Show that it works without errors (but is unsafe).
+      2. Demonstrate strict mode catching the same error:
+         - Enable "use strict".
+         - Assign the same undeclared variable.
+         - Show that it throws a ReferenceError.
+      3. Add comments explaining:
+         - Why normal mode allows the code.
+         - Why strict mode throws an error.
+         - How strict mode enforces safer coding practices.
+    */
+
+    // ============================
+    // NORMAL MODE EXAMPLE
+    // Undeclared variable silently creates a global
+    userOne = 'Hamza'; // no 'var', unsafe
+    console.log('Normal Mode:', userOne); // Works, but dangerous
+
+    // ============================
+    // STRICT MODE EXAMPLE
+    (function () {
+      'use strict'; // Strict mode enabled in this function scope
+      try {
+        userOne = 'Hamza'; // ❌ ReferenceError: userOne is not defined
+        console.log('Strict Mode:', userOne);
+      } catch (e) {
+        console.error('Strict Mode Error:', e.message);
+      }
+    })();
+  </script>
+</body>
+</html>
