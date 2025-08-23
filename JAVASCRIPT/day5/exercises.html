@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 5 - JavaScript Data Types Challenges</title>
+</head>
+<body>
+  <h1>JavaScript Data Types - Day 5 Challenges</h1>
+
+  <section>
+    <h2>1. Number Basics</h2>
+    <p>Multiply <code>price</code> and <code>quantity</code> and make sure total shows 2 decimal places:</p>
+    <pre>
+let price = 19.99;
+let quantity = 3;
+let total = price * quantity;
+alert("Total cost: " + total);
+    </pre>
+  </section>
+
+  <section>
+    <h2>2. BigInt</h2>
+    <p>Fix the code so it actually handles this as a BigInt:</p>
+    <pre>
+let big = 123456789012345678901234567890;
+alert(big);
+    </pre>
+  </section>
+
+  <section>
+    <h2>3. String Interpolation</h2>
+    <p>Make a sentence using backticks and ${} instead of +:</p>
+    <pre>
+let user = "Hamza";
+let age = 25;
+let hobby = "Gaming";
+alert("Hello I am " + user + ", my age is " + age + " and I love " + hobby);
+    </pre>
+  </section>
+
+  <section>
+    <h2>4. Boolean Comparisons</h2>
+    <p>Declare a variable <code>isAdult</code> which is true if age >= 18:</p>
+    <pre>
+let age = 25;
+let isAdult;
+alert(isAdult);
+    </pre>
+  </section>
+
+  <section>
+    <h2>5. Null and Undefined</h2>
+    <p>Declare variables for <code>null</code> and <code>undefined</code> and check them:</p>
+    <pre>
+let userName;
+let car = null;
+alert(userName);
+alert(car);
+    </pre>
+  </section>
+
+  <section>
+    <h2>6. typeof Checks</h2>
+    <p>Predict the type of different values using <code>typeof</code>:</p>
+    <pre>
+alert(typeof null);
+alert(typeof undefined);
+alert(typeof isAdult);
+alert(typeof big);
+alert(typeof hobby);
+    </pre>
+  </section>
+
+  <p>💡 Solutions are in <code>exercise.js</code></p>
+</body>
+</html>
