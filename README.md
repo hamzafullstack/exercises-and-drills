@@ -1,6 +1,6 @@
-# ChatGPT Exercises & Drills
+# Exercises & Drills
 
-Welcome to **ChatGPT Exercises & Drills**! 🚀
+Welcome to ** Exercises & Drills**! 🚀
 
 This repository/folder is dedicated to **practical coding exercises and challenges** that I complete and organize while learning web development and programming. It is designed to be a **structured space for practice, exploration, and improvement**.
 
