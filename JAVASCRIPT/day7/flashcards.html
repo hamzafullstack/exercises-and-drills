@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS Type Conversion Flashcards</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  h1 { color: #333; }
+  .flashcard {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  .flashcard:hover { transform: scale(1.05); }
+  .answer {
+    display: none;
+    margin-top: 15px;
+    color: #0077cc;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h1>JS Type Conversion Flashcards</h1>
+
+<div class="flashcard">
+  <div class="question">Q1: Convert "42" (string) to number</div>
+  <div class="answer">A1: Number("42") → 42</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">Q2: Convert empty string "" to boolean</div>
+  <div class="answer">A2: Boolean("") → false</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">Q3: Convert null to number</div>
+  <div class="answer">A3: Number(null) → 0</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">Q4: Convert invalid number string "123abc" to number</div>
+  <div class="answer">A4: Number("123abc") → NaN</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">Q5: Convert string "0" to boolean</div>
+  <div class="answer">A5: Boolean("0") → true</div>
+</div>
+
+<script>
+  const cards = document.querySelectorAll('.flashcard');
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const ans = card.querySelector('.answer');
+      ans.style.display = ans.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
