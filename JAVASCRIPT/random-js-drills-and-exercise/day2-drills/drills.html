@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript Variables – Drill Sheet</title>
+</head>
+<body>
+  <h1>JavaScript Variables — Drill Sheet</h1>
+  <p>Scope: <strong>Only</strong> the <a href="https://javascript.info/variables" target="_blank">javascript.info/variables</a> section.</p>
+
+  <h2>1) Declare and Assign</h2>
+  <ol>
+    <li>Declare a variable named <code>greeting</code>.</li>
+    <li>Assign the string <code>"Hello"</code> to it in a <em>separate</em> statement (not combined with declaration).</li>
+    <li>In one line, declare and assign another variable <code>farewell</code> with value <code>"Goodbye"</code>.</li>
+    <li>Log both with <code>console.log</code>.</li>
+  </ol>
+
+  <h2>2) Reassign Value</h2>
+  <ol>
+    <li>Declare <code>let mood = "happy";</code></li>
+    <li>Later in the script, reassign it to <code>"excited"</code>.</li>
+    <li>Log the final value of <code>mood</code>.</li>
+  </ol>
+
+  <h2>3) One per Line</h2>
+  <p>Declare the following on separate lines (not a single comma-separated statement):</p>
+  <pre><code>let name = "Alice";
+let age = 30;
+let city = "Dubai";</code></pre>
+
+  <h2>4) Invalid vs Valid Names — Identify Errors</h2>
+  <p>For each line below, write it and note whether it is valid or throws an error. Briefly explain why.</p>
+  <pre><code>let 1stPlace = "Gold"; 
+let my-name = "John"; 
+let _status = "active"; 
+let $ = 100;</code></pre>
+
+  <h2>5) Case Sensitivity</h2>
+  <ol>
+    <li>Declare <code>let Score = 10;</code></li>
+    <li>Declare <code>let score = 20;</code></li>
+    <li>Log both to show they’re different identifiers.</li>
+  </ol>
+
+  <h2>6) Reserved Word Check</h2>
+  <ol>
+    <li>Attempt <code>let let = 5;</code></li>
+    <li>Record the error and explain why it fails.</li>
+  </ol>
+
+  <h2>Bonus (Optional)</h2>
+  <h3>7) Copy Value</h3>
+  <ol>
+    <li>Declare <code>let original = "First";</code></li>
+    <li>Declare <code>let copy;</code> then set <code>copy = original;</code></li>
+    <li>Log both to confirm they hold the same value.</li>
+  </ol>
+
+  <h3>8) Re-Declaration Error (Same Block)</h3>
+  <ol>
+    <li>Declare <code>let item = "Book";</code></li>
+    <li>Attempt to declare <code>let item = "Pen";</code> again in the same block.</li>
+    <li>Capture the error message and summarize it.</li>
+  </ol>
+
+  <h2>Why this matters</h2>
+  <p>Nail the fundamentals: valid names, assignment, re-assignment, case sensitivity, and reserved words. Sloppy basics cause bugs later. Be precise.</p>
+
+</body>
+</html>
