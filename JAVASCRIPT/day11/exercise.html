@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Exercises to practice conditional branching in JavaScript, based strictly on javascript.info's article about if statements and the ternary operator. No solutions included.">
+    <meta name="author" content="Ameer Hamza Bugti">
+  <link rel="stylesheet" href="styles.css">
+  <title>Conditional Branching in JavaScript Exercises</title>
+</head>
+<body>
+  <header>
+    <h1>Conditional Branching in JavaScript | Exercises (Solution is in solution.js)</h1>
+    <p>Scope: Based strictly on javascript.info | Conditional branching: <code>if</code>, ternary operator. solutions included in separate file named solution.js.</p>
+  </header>
+
+  <main>
+    <section id="key-concepts">
+      <h2>Key Concepts You Learned</h2>
+      <ul>
+        <li><strong>Basic <code>if</code> syntax &amp; structure</strong>: run a block only when a condition is truthy.</li>
+        <li><strong>Truthiness &amp; Falsiness</strong>: values like <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, <code>NaN</code> are falsy; most others are truthy.</li>
+        <li><strong>Chaining with <code>if...else if...else</code></strong>: handle multiple distinct cases with a clear fallback.</li>
+        <li><strong>Brace discipline</strong>: use curly braces to avoid ambiguous <em>dangling else</em> bugs when nesting.</li>
+        <li><strong>Ternary operator</strong> <code>condition ? A : B</code>: compact alternative for simple two-branch decisions.</li>
+      </ul>
+    </section>
+
+    <section id="exercises">
+      <h2>Exercises (No Solutions)</h2>
+
+      <article class="exercise">
+        <h3>Exercise 1: Truthy or Falsy?</h3>
+        <p><strong>Task:</strong> Prompt the user for a value. If it is truthy, show "Truthy!"; otherwise, show "Falsy!".</p>
+        <p><strong>Purpose:</strong> Practice how JavaScript evaluates values inside <code>if</code> conditions using truthiness rules.</p>
+      </article>
+
+      <article class="exercise">
+        <h3>Exercise 2: Nested Conditions &amp; Braces Safety</h3>
+        <p><strong>Task:</strong> Given two numbers <code>a</code> and <code>b</code>:</p>
+        <ul>
+          <li>If <code>a &gt; b</code>, show "a is bigger". Inside that same block, if <code>a - b &gt; 10</code>, also show "Significantly bigger!".</li>
+          <li>Otherwise, show "a is not bigger".</li>
+        </ul>
+        <p><strong>Purpose:</strong> Reinforce nested <code>if</code> usage and the habit of always using braces for clarity and correctness.</p>
+      </article>
+
+      <article class="exercise">
+        <h3>Exercise 3: Multi-Way Condition (<code>if...else if...else</code>)</h3>
+        <p><strong>Task:</strong> Prompt for a mark (0–100) and show a grade:</p>
+        <ul>
+          <li>A for <code>&gt;= 90</code></li>
+          <li>B for <code>70–89</code></li>
+          <li>C for <code>50–69</code></li>
+          <li>D for <code>&lt; 50</code></li>
+        </ul>
+        <p><strong>Purpose:</strong> Practice multi-branch decision-making with clearly ordered conditions and a full coverage of ranges.</p>
+      </article>
+
+      <article class="exercise">
+        <h3>Exercise 4: Ternary Shortcut</h3>
+        <p><strong>Task:</strong> Prompt for a number. Using the ternary operator, decide whether it is even or odd and show "Even" or "Odd".</p>
+        <p><strong>Purpose:</strong> Learn when a concise ternary expression is cleaner than a full <code>if...else</code> for a simple binary choice.</p>
+      </article>
+
+      <article class="exercise">
+        <h3>Exercise 5: Mix Blocks with Ternary</h3>
+        <p><strong>Task:</strong> Prompt for a number <code>n</code>:</p>
+        <ul>
+          <li>If <code>n &gt; 0</code>, show "Positive".</li>
+          <li>Otherwise, show "Negative" or "Zero" using a ternary expression.</li>
+        </ul>
+        <p><strong>Purpose:</strong> Balance readability (with blocks) and concision (with a ternary) in one small flow.</p>
+      </article>
+    </section>
+
+    <section id="why-stick">
+      <h2>Why These Exercises Stick to the Article</h2>
+      <table>
+        <thead>
+          <tr><th>Exercise</th><th>Article Concept Covered</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Exercise 1: Truthy or Falsy?</td><td>Evaluating conditions directly via JavaScript truthiness and falsiness within <code>if</code> blocks.</td></tr>
+          <tr><td>Exercise 2: Nested Conditions &amp; Braces Safety</td><td>Proper use of braces; avoiding ambiguous <em>dangling else</em>; safe nested <code>if</code> structure.</td></tr>
+          <tr><td>Exercise 3: Multi-Way Condition</td><td>Sequencing logic with <code>if...else if...else</code> to cover non-overlapping ranges.</td></tr>
+          <tr><td>Exercise 4: Ternary Shortcut</td><td>Using <code>condition ? A : B</code> as a compact alternative for two-way decisions.</td></tr>
+          <tr><td>Exercise 5: Mix Blocks with Ternary</td><td>Combining block structure for clarity with the ternary operator for brevity in the fallback path.</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <!-- Signature -->
+<script>
+    console.log("This page was prepared by Ameer Hamza Bugti for practice aligned with javascript.info Conditional branching (if, ternary). No solutions are included here.");
+</script>
+  <footer>
+     © All Rights Reserved 2025 Ameer Hamza Bugti.
+    <p>Solutions are provided in a separate file named solution.js</p>
+  </footer>
+</body>
+</html>
